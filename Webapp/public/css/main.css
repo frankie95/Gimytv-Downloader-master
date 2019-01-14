@@ -1,0 +1,212 @@
+@font-face {
+	font-family: champagne;
+	src: url('../fonts/Champagne & Limousines Bold.ttf');
+}
+
+@font-face {
+	font-family: geosans;
+	src: url('../fonts/GeosansLight.ttf');
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.divHeader {
+	width: 100%;
+	background-color: rgb(135, 45, 45);
+	padding: 10px 30px;
+}
+
+.divHeader i {
+	font-size: 3em;
+	color: white;
+}
+
+.divHeader .text {
+	color: white;
+	font-size: 3em;
+	font-family: champagne;
+	padding-left: 5px;
+}
+
+.divBody {
+	text-align: center;
+	width: 100%;
+	margin-top: 50px;
+}
+
+.divForm {
+	width: 60%;
+	display: inline-block;
+}
+
+.divForm form {
+	width: 100%;
+	display: inline-block;
+	border: 1px solid rgb(135, 45, 45);
+}
+
+.divForm form input[type = "text"] {
+	width: 80%;
+	font-family: geosans;
+	font-size: 1.3em;
+	padding: 5px 10px;
+	outline: none;
+	border-radius: 0px;
+	color: rgb(135, 45, 45);
+	border: none;
+}
+
+.divForm form input[type = "submit"] {
+	width: 20%;
+	font-family: geosans;
+	font-size: 1.3em;
+	padding: 5px 10px;
+	outline: none;
+	border-radius: none;
+	border: none;
+	background-color: rgb(135, 45, 45);
+	color: white;
+}
+
+.divMainVideo {
+	width: 70%;
+	border: 1px solid rgb(135, 45, 45);
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.videoImage {
+	width: 240px;
+	height: 180px;
+	position: absolute;
+}
+
+.videoImage img {
+	width: 100%;
+	height: 100%;
+}
+
+.videoDetail {
+	width: 100%;
+	padding-left: 260px;
+	text-align: left;
+	min-height: 180px;
+}
+
+.videoTitle {
+	font-family: champagne;
+	font-size: 1.4em;
+	color: rgb(135, 45, 45);
+}
+
+.basicDetails {
+	margin-top: 10px;
+	padding-left: 20px;
+	font-family: champagne;
+	color: rgba(135, 45, 45, 0.5);
+	font-size: 0.8em;
+}
+
+.basicDetails span {
+	margin-left: 10px;
+}
+
+.basicDetails .views {
+	display: block;
+	width: 100%;
+	font-size: 1.2em;
+	color: rgba(135, 45, 45, 0.8);
+}
+
+.basicDetails div {
+	display: inline-block;
+	width: 40%;
+	margin-top: 10px;
+}
+
+.divDownload {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.downloadButton {
+	display: inline-block;
+	padding: 5px 10px;
+	font-family: champagne;
+	border: 1px solid rgb(135, 45, 45);
+	background-color: rgba(135, 45, 45, 1);
+	color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+.unloaded {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: white;
+	left: 0px;
+	top: 0px;
+	z-index: 10;
+}
+
+.error {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgb(135, 45, 45);
+	left: 0px;
+	top: 0px;
+	z-index: 10;
+	text-align: left;
+}
+
+.errorLeft {
+	text-align: center;
+	height: 100%;
+	display: inline-block;
+	width: 40%;
+	color: white;
+	font-size: 5em;
+	padding-top: 60px;
+	position: absolute;
+	left: 0px;
+}
+
+.errorRight {
+	display: inline-block;
+	width: 58%;
+	height: 100%;
+	padding-top: 60px;
+	font-family: champagne;
+	color: white;
+	position: absolute;
+	left: 40%;
+	font-size: 1.5em;
+}
+
+.present {
+	display: inline-block;
+	z-index: 11;
+}
+
+.gone {
+	display: none;
+}
+
+.divTrending {
+	width: 80%;
+	border: 1px solid rgb(135, 45, 45);
+	display: inline-block;
+	height: 150px;
+}

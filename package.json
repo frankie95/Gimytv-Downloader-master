@@ -1,0 +1,26 @@
+{
+  "name": "YouTube-Downloader",
+  "version": "0.0.1",
+  "description": "A multipurpose YouTube-Downloader",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ./main"
+  },
+  "author": "saurabh0402",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.17",
+    "body-parser": "^1.15.2",
+    "cheerio": "^1.0.0-rc.2",
+    "concatenate-files": "^0.1.1",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "fake-agent": "^1.0.5",
+    "fake-useragent": "^1.0.1",
+    "file-system": "^2.2.2",
+    "fs": "0.0.1-security",
+    "hlsdownloader": "^2.2.1",
+    "m3u8-to-mp4": "^1.0.0",
+    "request": "^2.88.0",
+    "website-scraper": "^4.0.0"
+  }
+}
