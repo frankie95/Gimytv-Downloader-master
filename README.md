@@ -1,2 +1,2 @@
-
-This Project is meant to download videos from Youtube. You have to just paste link of your video and hit the download button, thereafter this Downloader will start downloading the video.  
+Modified from a Youtube downloader. 
+Download m3u8 file to MP4.
