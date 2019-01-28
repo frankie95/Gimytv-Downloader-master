@@ -11,22 +11,19 @@ handlebars = require('express-handlebars').create({
 	}
 }),
 getLinks = require('./lib/getLinks');
-
+var m3u8ToMp4 = require("m3u8-to-mp4");
+ 
+async function download(link,name) {
+	await  new m3u8ToMp4()
+	  .setInputFile(link)
+	  .setOutputFile(name+".mp4")
+	  .start();
+	console.log(name+"converted");
+  };
+  
 
 function main(){
 
-
-	//var m3u8ToMp4 = require("m3u8-to-mp4");
-	//var converter = new m3u8ToMp4();
-	// 
-	//(async function() {
-	//  await converter
-	//	.setInputFile("https://yun.kubo-zy-youku.com/20181224/oKzRqMVZ/index.m3u8")
-	//	.setOutputFile("dummy.mp4")
-	//	.start();
-	//  console.log("File converted");
-	//})();
-	
 
 	 var app = express();
 	 app.set('port', process.env.PORT || 5000);
@@ -42,14 +39,18 @@ function main(){
 	 	res.render("index");
 	 });
 
-	 app.post("/getvideolink", (req, res) => {
-		 var link = req.body.link;
+	 app.get("/getvideolink/:link/:name", (req, res) => {
+		var link = req.params.link;
+		var name=unescape(req.params.name)
 		 console.log(link)
+		 console.log(name)
+		 download(link,name)
 	 	//getLinks.getLinks(link);
-//
 	 	//getLinks.once('done', (urls) => {
-	 	//	res.json(urls);
-	 	//});
+	 		
+		 //});
+		 
+		 res.json({state:"downloading"})
 	 });
 
 	 app.listen(app.get('port'), () => {
